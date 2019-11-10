@@ -1,0 +1,32 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background: whitesmoke;
+}
+
+.dialogs__item {
+    padding: 10px;
+}
+.dialogs__item a{
+    text-decoration: none;
+    color: #1e2938;
+    font-family: -apple-system;
+    font-size: 22px;
+}
+.dialogs__item .active{
+    font-size: 15px;
+
+
+}
+
+.messages {
+    padding: 10px;
+    text-decoration: none;
+    color: #1e2938;
+    font-family: -apple-system;
+    font-size: 22px;
+}
+
+.message {
+
+}

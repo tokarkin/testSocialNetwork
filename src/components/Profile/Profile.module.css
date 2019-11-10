@@ -1,0 +1,15 @@
+.content {
+  grid-area: content;
+  background-color: blue;
+}
+.item{
+ color:wheat;
+}
+
+.content__img{
+    width: 500px;
+
+}
+.content__wrapper__img{
+    width: 25px;
+}

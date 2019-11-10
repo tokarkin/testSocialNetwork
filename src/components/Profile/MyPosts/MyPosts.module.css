@@ -1,0 +1,38 @@
+.content{
+  grid-area: content;
+  background-color: blue;
+
+}
+.item{
+ color:blue;
+}
+
+.posts{
+    margin-top: 10px;
+}
+
+.posts__wrapper{
+    margin: 0 auto;
+
+}
+.post__area{
+    margin-left: 100px;
+    border-radius: 10px;
+    border:2px solid #1e2938;
+    width: 70%;
+}
+.post__approwed{
+    border: 1px solid #1e2938;
+    background: #67a4f5;
+    border-radius: 5px;
+    padding: 11px 17px 11px 17px;
+    font-size: 20px;
+    background: burlywood;
+    overflow: none;
+    margin-left: 100px;
+}
+.post__approwed:hover{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}

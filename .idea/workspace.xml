@@ -1,8 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46c612f0-943c-4001-93c5-a5f478546643" name="Default Changelist" comment="sad">
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/Nav-bar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavFriends/Nav-barFriends.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavFriends/NavBarFriends.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Posts/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Posts/Post.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/img_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/katya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/oleh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sasha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vlad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SN88m6kjAZp2avrE8ZRo4GUZ0M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/DialogItem" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\DialogItem" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\NavBar\NavFriends" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\Message" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts\Posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\redux" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46c612f0-943c-4001-93c5-a5f478546643" name="Default Changelist" comment="" />
+      <created>1571392535943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571392535943</updated>
+      <workItem from="1571392538903" duration="272000" />
+      <workItem from="1571480898406" duration="32000" />
+      <workItem from="1571653948377" duration="771000" />
+      <workItem from="1571655465613" duration="11352000" />
+      <workItem from="1571688072613" duration="128000" />
+      <workItem from="1571735515088" duration="15071000" />
+      <workItem from="1571825691960" duration="2401000" />
+      <workItem from="1572864326766" duration="225000" />
+      <workItem from="1573388919901" duration="16918000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sad" />
+    <option name="LAST_COMMIT_MESSAGE" value="sad" />
   </component>
 </project>
