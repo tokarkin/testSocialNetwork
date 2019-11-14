@@ -4,13 +4,12 @@ import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile =(props)=>{
+
     return(
         <div >
             <ProfileInfo />
-            <MyPosts addPost={props.addPost}
-                     newPostText = {props.profilePage.newPostText}
-                     Posts={props.profilePage.Posts}
-                     updateNewPostText={props.updateNewPostText}/>
+            <MyPosts dispatch = {props.dispatch} text = {props.profilePage}
+                     Posts={props.profilePage.Posts}/>
         </div>
     )
 }

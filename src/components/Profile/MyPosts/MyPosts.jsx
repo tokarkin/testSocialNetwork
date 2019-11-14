@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from "./Posts/Post";
-import {updateNewPostText} from "../../../redux/state";
+import {addPostActionCreator, uppdateNewPostTextActionCreator} from "../../../redux/state";
+
 
 
 
@@ -12,21 +13,25 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () =>{
-        props.addPost();
+        props.dispatch(addPostActionCreator());
     };
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        console.log(text);
-        props.updateNewPostText(text);
+        let action = uppdateNewPostTextActionCreator(text);
+        props.dispatch(action);
     };
     return (
         <div className="content">
             <div className={s.posts__wrapper}>
                 <div>
-                    <textarea onChange={onPostChange} ref={newPostElement} className={s.post__area} value={props.newPostText} />
+                    <textarea onChange={onPostChange} ref={newPostElement}
+                              className={s.post__area}
+                              value={props.text.newPostText} />
                 </div>
                 <div>
-                    <button onClick={addPost} className={s.post__approwed}>Add post</button>
+                    <button onClick={addPost}
+                            className={s.post__approwed}
+                    >Add post</button>
                 </div>
                 <div>
                     New post

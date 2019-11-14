@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c612f0-943c-4001-93c5-a5f478546643" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/CreateMessage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
@@ -26,6 +28,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/DialogItem" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,19 +38,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\Message" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\redux" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\DialogItem" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\NavBar\NavFriends" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\Message" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts\Posts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\redux" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +100,10 @@
       <workItem from="1572864326766" duration="225000" />
       <workItem from="1573388919901" duration="23047000" />
       <workItem from="1573472263939" duration="7805000" />
-      <workItem from="1573485066274" duration="3054000" />
+      <workItem from="1573485066274" duration="3067000" />
+      <workItem from="1573564764269" duration="1408000" />
+      <workItem from="1573659058521" duration="6088000" />
+      <workItem from="1573722027295" duration="13125000" />
     </task>
     <task id="LOCAL-00002" summary="sad">
       <created>1573411728739</created>
@@ -106,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573411728739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OOP">
+      <created>1573488802282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573488802282</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,17 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sad" />
-    <option name="LAST_COMMIT_MESSAGE" value="sad" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/index.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP" />
   </component>
 </project>
