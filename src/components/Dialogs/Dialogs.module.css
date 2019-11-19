@@ -1,9 +1,11 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    background: whitesmoke;
 }
-
+.message{
+    font-size: 30px;
+    color: black;
+}
 .dialogs__item {
     padding: 10px;
 }

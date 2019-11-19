@@ -3,18 +3,26 @@ import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
-import  App from '../../App';
-import CreateMessage from "./Message/CreateMessage";
-
 
 const Dialogs = (props) => {
-    let elementData = props.state.arrayDialogs.map((dialog)=><DialogItem name={dialog.name} logo={dialog.logo}  id={dialog.id}/>);
-    let elementMessaga = props.state.Messages.map((m)=><Message logo={m.logo} message={m.message}/>);
-    let createMessage = React.createRef();
-    let mail = () => {
-        let a = createMessage.current.value;
-        alert(a);
-    }
+    let state = props.messagesPage;
+
+    let elementData = state.arrayDialogs.map((dialog) => <DialogItem
+        name={dialog.name} key={dialog.id}
+        logo={dialog.logo} id={dialog.id}/>);
+    let elementMessages = state.Messages.map((m) => <Message message={m.message} key={m.id}/>);
+    let newMessageBody = state.newMessageText;
+
+    let onSendMessageClick = () => {
+        props.SendMessageClick();
+    };
+
+    let onNewMessageChange = (e) => {
+        let body = e.target.value;
+        props.updateNewMessage(body);
+
+    };
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs__item}>
@@ -22,8 +30,22 @@ const Dialogs = (props) => {
 
             </div>
             <div className={s.messages}>
-                {elementMessaga}
-               <CreateMessage dispatch = {props.dispatch} />
+
+                <div>
+                    <div>{elementMessages}</div>
+                    <div>
+                        <textarea
+                            onChange={onNewMessageChange}
+                            value={newMessageBody}
+                            placeholder='enter message'></textarea>
+                    </div>
+                    <div>
+                        <button onClick={onSendMessageClick}>
+                            send
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </div>
     )

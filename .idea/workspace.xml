@@ -2,15 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c612f0-943c-4001-93c5-a5f478546643" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/CreateMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/NewsItem/newsPost.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/news.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/newsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/PreLoader/PreLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/Users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/paginator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/user.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/usersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/message-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/news-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/CreateMessage.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/Nav-bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/Nav-bar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavFriends/NavBarFriends.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavFriends/NavBarFriends.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Posts/Post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/DialogItem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/users" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,11 +77,11 @@
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\users" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs" />
+      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\DialogItem" />
       <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\NavBar\NavFriends" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Dialogs\Message" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\ProfileInfo" />
-      <recent name="C:\Users\dimak\WebstormProjects\untitled1\src\components\Profile\MyPosts\Posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +134,16 @@
       <workItem from="1573485066274" duration="3067000" />
       <workItem from="1573564764269" duration="1408000" />
       <workItem from="1573659058521" duration="6088000" />
-      <workItem from="1573722027295" duration="13125000" />
+      <workItem from="1573722027295" duration="23483000" />
+      <workItem from="1573815679053" duration="12928000" />
+      <workItem from="1573841949316" duration="1246000" />
+      <workItem from="1573900870247" duration="11924000" />
+      <workItem from="1573916176937" duration="241000" />
+      <workItem from="1573932693332" duration="9876000" />
+      <workItem from="1573988220567" duration="15020000" />
+      <workItem from="1574018292103" duration="3377000" />
+      <workItem from="1574074647051" duration="27932000" />
+      <workItem from="1574160746908" duration="22520000" />
     </task>
     <task id="LOCAL-00002" summary="sad">
       <created>1573411728739</created>
@@ -119,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573488802282</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="выфвфыв40">
+      <created>1573740684443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573740684443</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +188,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sad" />
     <MESSAGE value="OOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="OOP" />
+    <MESSAGE value="выфвфыв40" />
+    <option name="LAST_COMMIT_MESSAGE" value="выфвфыв40" />
   </component>
 </project>

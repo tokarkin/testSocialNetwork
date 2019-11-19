@@ -16,7 +16,7 @@ const ProfileInfo =()=>{
                         <p className={s.containertext}>City: Vinnitsya</p>
                         <p className={s.containertext}> Gender: man</p>
                         <p className={s.containertext}>Date of Birthday: 24.02.1997</p>
-                        <p className={s.containertext}>City:https://www.facebook.com/profile.php?id=100018624964335&ref=bookmarks </p>
+                        <p className={s.containertext}>City:Kyiv </p>
                     </div>
                 </div>
 

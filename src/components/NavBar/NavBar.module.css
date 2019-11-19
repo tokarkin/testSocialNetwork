@@ -1,21 +1,4 @@
-.nav{
-  grid-area: n;
-  background-color: #1e2938;
-  margin-left: 0px;
-  border-radius: 10px;
-  text-align: center;
-  font-family: -apple-system;
-  font-size: large;
-}
-.item{
-
-  padding: 10px;
-}
-.item a{
+.activeColor{
+  color: #1e2938;
   text-decoration: none;
-  color: white;
-}
-.item a.activeColor{
-  color: cadetblue;
-  box-shadow: 10px 10px 10px rgba(0.5,2,1,1.9)
 }

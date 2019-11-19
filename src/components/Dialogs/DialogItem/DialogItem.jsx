@@ -6,7 +6,6 @@ import logotip from '../../../images/sasha.jpg';
 
 
 const DialogItem = (props) => {
-
     let path = "/dialogs/" + props.id;
     return (
         <div className={s.dialog + ' ' + s.active}>

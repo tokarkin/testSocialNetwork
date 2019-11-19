@@ -1,21 +1,20 @@
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import store from "./redux/state";
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import store from "./redux/redux-store";
+
 import './index.css';
 import {BrowserRouter} from "react-router-dom";
-import {addPost, updateNewPostText} from "./redux/state";
+import {Provider} from "react-redux";
 
 let rerenderDom = (state) =>{
     ReactDOM.render(
         <BrowserRouter>
-            <App state={state} dispatch={store.dispatch.bind(store)}
-            />
+
+           <Provider store={store}>
+                <App />
+            </Provider>
         </BrowserRouter>, document.getElementById('root'));
 };
 
-rerenderDom(store.getState());
-
-store.subscribe(rerenderDom);
-
+rerenderDom();
