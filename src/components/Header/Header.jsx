@@ -1,12 +1,12 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { createStyles, fade,  makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import {NavLink} from "react-router-dom";
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -59,31 +59,56 @@ const useStyles = makeStyles(theme => ({
             },
         },
     },
+    button: {
+        margin: theme.spacing(1),
+        marginLeft:'20px'
+    },
+    block:{
+        display: 'flex',
+        flexFlow: 'row',
+        textAlign:'center',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+    }
 }));
-const Header =() =>{
+const Header =(props) =>{
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-
                     <Typography className={classes.title} variant="h6" noWrap>
                         TokarkIn
                     </Typography>
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                            <SearchIcon />
+                    <div className={classes.block}>
+                        <div className={classes.search}>
+                            <div className={classes.searchIcon}>
+                                <SearchIcon />
+                            </div>
+                            <InputBase
+                                placeholder="Search…"
+                                classes={{
+                                    root: classes.inputRoot,
+                                    input: classes.inputInput,
+                                }}
+                                inputProps={{ 'aria-label': 'search' }}
+                            />
                         </div>
-                        <InputBase
-                            placeholder="Search…"
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput,
-                            }}
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
+                        <div>
+                            {
+                                props.isAuth ?  props.login  :  <NavLink to ={'/login'}>
+                                    <Button variant="outlined" color="white" className={classes.button}>
+                                        Log in
+                                    </Button>
+                                </NavLink>
+                            }
+
+
+
+                        </div>
                     </div>
+
                 </Toolbar>
             </AppBar>
         </div>

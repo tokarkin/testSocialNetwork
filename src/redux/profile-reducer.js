@@ -6,6 +6,7 @@ import logo4 from "../images/oleh.jpg";
 
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const SET_USER_PROFILE = 'SET_USER_PROFILE'
 
 let storeState = {
     Posts: [{id: 1, name: 'Dima', logo: {logoMain}, message: 'tired', likesCount: '2'},
@@ -15,6 +16,7 @@ let storeState = {
         {id: 5, name: 'Oleh', logo: {logo4}, message: 'yo', likesCount: '2'},
     ],
     newPostText: ``,
+    profile: null,
 };
 
 const profileReducer = (state = storeState, action) => {
@@ -39,6 +41,13 @@ const profileReducer = (state = storeState, action) => {
             };
             break
         }
+        case  SET_USER_PROFILE :{
+            return {
+                ...state,
+                profile:action.profile,
+
+            }
+        }
         default:
             return state;
     }
@@ -54,6 +63,7 @@ export const updateNewPostTextActionCreator = (text) => {
         newText: text,
     }
 }
+export const setUserProfile = (profile) => ({ type: SET_USER_PROFILE,profile });
 
 
 export default profileReducer;

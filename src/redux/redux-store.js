@@ -3,6 +3,7 @@ import messageReducer from "./message-reducer";
 import profileReducer from "./profile-reducer";
 import userReducers from "./users-reducer";
 import newsReducers from "./news-reducer";
+import authReducer from "./auth-reducer";
 
 
 let reducerItems = combineReducers({
@@ -10,6 +11,7 @@ let reducerItems = combineReducers({
     messagesPage : messageReducer,
     usersPage:userReducers,
     newsPage: newsReducers,
+    auth:authReducer,
 
 
 });

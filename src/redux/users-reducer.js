@@ -69,13 +69,13 @@ const userReducers = (state = startState, action) => {
     }
 
 }
-export const  followedActionCreator = (userId) => ({type:FOLLOW, userId});
-export const unfollowedActionCreator = (userId) =>({type:UNFOLLOW, userId});
-export const setStateUsers = (users) => ({ type: SET_STATE_USERS, users});
+export const  follows = (userId) => ({type:FOLLOW, userId});
+export const unfollows = (userId) =>({type:UNFOLLOW, userId});
+export const setUsers = (users) => ({ type: SET_STATE_USERS, users});
 export  const searchFriend = (userName) =>({type:FIND_FRIEND, userName});
-export const setStatePage = (currentPage) => ({type:SET_STATE_CURRENT_PAGE, currentPage: currentPage });
-export const setTotalUsersCountAC = (totalUsersCount) => ({type:SET_USERS_COUNT, count:totalUsersCount });
-export const  setIsLoadingAC= (isLoading) => ({type:TOGGLE_IS_LOADING, loading:isLoading });
+export const setCurrentPage = (currentPage) => ({type:SET_STATE_CURRENT_PAGE, currentPage: currentPage });
+export const setTotalUsersCount = (totalUsersCount) => ({type:SET_USERS_COUNT, count:totalUsersCount });
+export const  setIsLoading= (isLoading) => ({type:TOGGLE_IS_LOADING, loading:isLoading });
 
 
 export default userReducers;

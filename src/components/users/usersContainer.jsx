@@ -2,33 +2,34 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import * as axios from "axios";
 import Users from "./user";
-import {
-    followedActionCreator,
-    searchFriend, setIsLoadingAC,
-    setStatePage,
-    setStateUsers, setTotalUsersCountAC,
-    unfollowedActionCreator
-} from "../../redux/users-reducer";
-import preLoader from '../../images/Infinity-1s-270px.svg';
 import PreLoader from "../common/PreLoader/PreLoader";
+import {
+    follows,
+    searchFriend,
+    setCurrentPage, setIsLoading,
+    setTotalUsersCount,
+    setUsers,
+    unfollows
+} from "../../redux/users-reducer";
+import {getUsers} from "../../API/api";
 
 class UsersContainer extends Component {
 
     componentDidMount() {
         this.props.setIsLoading(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
+        getUsers(this.props.currentPage, this.props.pageSize).then(data => {
             this.props.setIsLoading(false);
-            this.props.setUsers(response.data.items);
-            this.props.setTotalUsersCount(response.data.totalCount);
-        })
+            this.props.setUsers(data.items);
+            this.props.setTotalUsersCount(data.totalCount);
+        });
     }
 
     giveNewPage = (pageNumber) => {
         this.props.setIsLoading(true);
         this.props.setCurrentPage(pageNumber);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`).then(response => {
+        getUsers(pageNumber, this.props.pageSize).then(data => {
             this.props.setIsLoading(false);
-            this.props.setUsers(response.data.items);
+            this.props.setUsers(data.items);
 
         })
     }
@@ -58,31 +59,14 @@ let mapStateToProps = (state) => {
     }
 
 };
-let mapDispatchToProps = (dispatch) => {
-    return {
-        follows: (userId) => {
-            dispatch(followedActionCreator(userId));
-        },
-        unfollows: (userId) => {
-            dispatch(unfollowedActionCreator(userId));
-        },
-        setUsers: (users) => {
-            dispatch(setStateUsers(users));
-        },
-        searchFriend: (userName) => {
-            dispatch(searchFriend(userName));
-        },
-        setCurrentPage: (page) => {
-            dispatch(setStatePage(page));
-        },
-        setTotalUsersCount: (totalCount) => {
-            dispatch(setTotalUsersCountAC(totalCount));
-        },
-        setIsLoading:(isLoading)=>{
-            dispatch(setIsLoadingAC(isLoading));
-        }
-    }
 
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);
+export default connect(mapStateToProps,  {
+    follows,
+    unfollows,
+    setUsers,
+    searchFriend,
+    setCurrentPage,
+    setTotalUsersCount,
+    setIsLoading,
+})(UsersContainer);

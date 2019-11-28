@@ -91,9 +91,7 @@ let NewsPost = (props) => {
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                     <CardContent>
                         <Typography paragraph>
-                            {props.content === null ? () => {
-                                return <a href="">props.toInfo</a>
-                            } : props.content}
+                            {props.content}
                         </Typography>
                     </CardContent>
                 </Collapse>
