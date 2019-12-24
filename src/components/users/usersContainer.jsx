@@ -1,37 +1,26 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import * as axios from "axios";
 import Users from "./user";
 import PreLoader from "../common/PreLoader/PreLoader";
 import {
     follows,
     searchFriend,
     setCurrentPage, setIsLoading,
-    setTotalUsersCount,
-    setUsers,
-    unfollows
+    getUsersThunkCreator, setToggleFollowingProgress, follow, unfollow
 } from "../../redux/users-reducer";
-import {getUsers} from "../../API/api";
+import {withAuthRedirect} from "../../HOK/AuthRedirect";
+
+import {compose} from "redux";
+import {getUsers} from "../../Selectors/users-selectors";
 
 class UsersContainer extends Component {
 
     componentDidMount() {
-        this.props.setIsLoading(true);
-        getUsers(this.props.currentPage, this.props.pageSize).then(data => {
-            this.props.setIsLoading(false);
-            this.props.setUsers(data.items);
-            this.props.setTotalUsersCount(data.totalCount);
-        });
+        this.props.getUsers(this.props.currentPage, this.props.pageSize);
     }
 
     giveNewPage = (pageNumber) => {
-        this.props.setIsLoading(true);
-        this.props.setCurrentPage(pageNumber);
-        getUsers(pageNumber, this.props.pageSize).then(data => {
-            this.props.setIsLoading(false);
-            this.props.setUsers(data.items);
-
-        })
+        this.props.getUsers(pageNumber, this.props.pageSize);
     }
 
     render() {
@@ -41,32 +30,49 @@ class UsersContainer extends Component {
                    pageSize={this.props.pageSize}
                    currentPage={this.props.currentPage}
                    users={this.props.users}
-                   follows={this.props.follows}
-                   unfollows={this.props.unfollows}
+                   follow={this.props.follow}
+                   unfollow={this.props.unfollow}
                    giveNewPage={this.giveNewPage}
+                   setToggleFollowingProgress={this.props.setToggleFollowingProgress}
+                   followingInProgress={this.props.followingInProgress}
             />
         </>
     }
 }
 
+
+
+// let mapStateToProps = (state) => {
+//     return {
+//         users: state.usersPage.users,
+//         pageSize: state.usersPage.pageSize,
+//         totalUsersCount: state.usersPage.totalUsersCount,
+//         currentPage: state.usersPage.currentPage,
+//         isLoading: state.usersPage.isLoading,
+//         followingInProgress:state.usersPage.followingInProgress,
+//     }
+// };
+
 let mapStateToProps = (state) => {
     return {
-        users: state.usersPage.users,
+        users: getUsers(state),
         pageSize: state.usersPage.pageSize,
         totalUsersCount: state.usersPage.totalUsersCount,
         currentPage: state.usersPage.currentPage,
         isLoading: state.usersPage.isLoading,
+        followingInProgress:state.usersPage.followingInProgress,
     }
-
 };
 
 
-export default connect(mapStateToProps,  {
-    follows,
-    unfollows,
-    setUsers,
+export default compose(
+    withAuthRedirect,
+    connect(mapStateToProps,  {
+    follow,
+    unfollow,
     searchFriend,
     setCurrentPage,
-    setTotalUsersCount,
     setIsLoading,
-})(UsersContainer);
+    getUsers:getUsersThunkCreator,
+    setToggleFollowingProgress
+}))(UsersContainer);

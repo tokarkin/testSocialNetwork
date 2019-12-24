@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Users.module.css";
 
 let Paginator =(props) =>{
+
     return <div>
         <ul className={s.list}>
             {props.page.map(p => {

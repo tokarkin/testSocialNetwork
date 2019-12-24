@@ -6,26 +6,23 @@ import {
     changeNewsCountyAc,
     setStateNews,
 } from "../../redux/news-reducer";
+import {getNews} from "../../API/api";
 
 
 
 class NewsContainer extends Component {
 
     componentDidMount() {
-         axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=f59a7b8bb2434e739e0bb1a119cae542`).then(response => {
-             this.props.setData(response.data.articles);
-
-
-         })
+        getNews(this.props.language).then(data => {
+            this.props.setData(data.articles);
+        });
     }
     giveNewNewsCountry = (language)=>{
         this.props.changeNewsOfCountry(language);
-        axios.get(`https://newsapi.org/v2/top-headlines?country=${language}&apiKey=f59a7b8bb2434e739e0bb1a119cae542`).then(response => {
-            this.props.setData(response.data.articles);
-            console.log(response.data.articles);
-
-        })
-
+            getNews(this.props.language).then(data => {
+                this.props.setData(data.articles);
+                console.log(data.articles);
+            });
     }
 
     render(){
